@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341271532085E4B4002719F5 /* JSCCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 341271522085E4B4002719F5 /* JSCCollectionViewFlowLayout.m */; };
+		342B56822088365800F15F88 /* BRAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B56722088365800F15F88 /* BRAddressModel.m */; };
+		342B56832088365800F15F88 /* BRAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B56742088365800F15F88 /* BRAddressPickerView.m */; };
+		342B56842088365800F15F88 /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 342B56752088365800F15F88 /* BRPickerView.bundle */; };
+		342B56852088365800F15F88 /* BRBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B56782088365800F15F88 /* BRBaseView.m */; };
+		342B56862088365800F15F88 /* BRDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B567C2088365800F15F88 /* BRDatePickerView.m */; };
+		342B56872088365800F15F88 /* NSDate+BRAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B567E2088365800F15F88 /* NSDate+BRAdd.m */; };
+		342B56882088365800F15F88 /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B56812088365800F15F88 /* BRStringPickerView.m */; };
 		345C22F1208091C000FCFE96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 345C22F0208091C000FCFE96 /* AppDelegate.m */; };
 		345C22F3208091C000FCFE96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345C22F2208091C000FCFE96 /* Assets.xcassets */; };
 		345C22F6208091C000FCFE96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345C22F4208091C000FCFE96 /* LaunchScreen.storyboard */; };
 		345C22F9208091C000FCFE96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345C22F8208091C000FCFE96 /* main.m */; };
 		345C2303208091C000FCFE96 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345C2302208091C000FCFE96 /* ____Tests.m */; };
 		345C230E208091C000FCFE96 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345C230D208091C000FCFE96 /* ____UITests.m */; };
+		345C231D2080920000FCFE96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345C231C2080920000FCFE96 /* ViewController.m */; };
+		34647AA120844781003EB881 /* NSCalendar+JSCCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 34647A9F20844780003EB881 /* NSCalendar+JSCCalendar.m */; };
+		34647AA420844B4E003EB881 /* JSCCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34647AA320844B4E003EB881 /* JSCCollectionViewCell.m */; };
+		34647AAA208473A9003EB881 /* JSCheaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34647AA9208473A9003EB881 /* JSCheaderCollectionReusableView.m */; };
+		34647AAD208473C3003EB881 /* JSCfooterCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34647AAC208473C3003EB881 /* JSCfooterCollectionReusableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +46,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		341271512085E4B4002719F5 /* JSCCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		341271522085E4B4002719F5 /* JSCCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		342B56712088365800F15F88 /* BRAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressModel.h; sourceTree = "<group>"; };
+		342B56722088365800F15F88 /* BRAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressModel.m; sourceTree = "<group>"; };
+		342B56732088365800F15F88 /* BRAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressPickerView.h; sourceTree = "<group>"; };
+		342B56742088365800F15F88 /* BRAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressPickerView.m; sourceTree = "<group>"; };
+		342B56752088365800F15F88 /* BRPickerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BRPickerView.bundle; sourceTree = "<group>"; };
+		342B56772088365800F15F88 /* BRBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBaseView.h; sourceTree = "<group>"; };
+		342B56782088365800F15F88 /* BRBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBaseView.m; sourceTree = "<group>"; };
+		342B56792088365800F15F88 /* BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerView.h; sourceTree = "<group>"; };
+		342B567B2088365800F15F88 /* BRDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDatePickerView.h; sourceTree = "<group>"; };
+		342B567C2088365800F15F88 /* BRDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDatePickerView.m; sourceTree = "<group>"; };
+		342B567D2088365800F15F88 /* NSDate+BRAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BRAdd.h"; sourceTree = "<group>"; };
+		342B567E2088365800F15F88 /* NSDate+BRAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BRAdd.m"; sourceTree = "<group>"; };
+		342B56802088365800F15F88 /* BRStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringPickerView.h; sourceTree = "<group>"; };
+		342B56812088365800F15F88 /* BRStringPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRStringPickerView.m; sourceTree = "<group>"; };
 		345C22EC208091C000FCFE96 /* 日历开发.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "日历开发.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		345C22EF208091C000FCFE96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		345C22F0208091C000FCFE96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,6 +75,16 @@
 		345C2309208091C000FCFE96 /* 日历开发UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "日历开发UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		345C230D208091C000FCFE96 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		345C230F208091C000FCFE96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345C231B2080920000FCFE96 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		345C231C2080920000FCFE96 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		34647A9F20844780003EB881 /* NSCalendar+JSCCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+JSCCalendar.m"; sourceTree = "<group>"; };
+		34647AA020844781003EB881 /* NSCalendar+JSCCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+JSCCalendar.h"; sourceTree = "<group>"; };
+		34647AA220844B4E003EB881 /* JSCCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCCollectionViewCell.h; sourceTree = "<group>"; };
+		34647AA320844B4E003EB881 /* JSCCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCCollectionViewCell.m; sourceTree = "<group>"; };
+		34647AA8208473A9003EB881 /* JSCheaderCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCheaderCollectionReusableView.h; sourceTree = "<group>"; };
+		34647AA9208473A9003EB881 /* JSCheaderCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCheaderCollectionReusableView.m; sourceTree = "<group>"; };
+		34647AAB208473C3003EB881 /* JSCfooterCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCfooterCollectionReusableView.h; sourceTree = "<group>"; };
+		34647AAC208473C3003EB881 /* JSCfooterCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCfooterCollectionReusableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +112,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		342B566F2088365800F15F88 /* BRPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				342B56702088365800F15F88 /* AddressPickerView */,
+				342B56762088365800F15F88 /* Base */,
+				342B56792088365800F15F88 /* BRPickerView.h */,
+				342B567A2088365800F15F88 /* DatePickerView */,
+				342B567F2088365800F15F88 /* StringPickerView */,
+			);
+			path = BRPickerView;
+			sourceTree = "<group>";
+		};
+		342B56702088365800F15F88 /* AddressPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				342B56712088365800F15F88 /* BRAddressModel.h */,
+				342B56722088365800F15F88 /* BRAddressModel.m */,
+				342B56732088365800F15F88 /* BRAddressPickerView.h */,
+				342B56742088365800F15F88 /* BRAddressPickerView.m */,
+				342B56752088365800F15F88 /* BRPickerView.bundle */,
+			);
+			path = AddressPickerView;
+			sourceTree = "<group>";
+		};
+		342B56762088365800F15F88 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				342B56772088365800F15F88 /* BRBaseView.h */,
+				342B56782088365800F15F88 /* BRBaseView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		342B567A2088365800F15F88 /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				342B567B2088365800F15F88 /* BRDatePickerView.h */,
+				342B567C2088365800F15F88 /* BRDatePickerView.m */,
+				342B567D2088365800F15F88 /* NSDate+BRAdd.h */,
+				342B567E2088365800F15F88 /* NSDate+BRAdd.m */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
+		342B567F2088365800F15F88 /* StringPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				342B56802088365800F15F88 /* BRStringPickerView.h */,
+				342B56812088365800F15F88 /* BRStringPickerView.m */,
+			);
+			path = StringPickerView;
+			sourceTree = "<group>";
+		};
 		345C22E3208091C000FCFE96 = {
 			isa = PBXGroup;
 			children = (
@@ -96,12 +188,25 @@
 		345C22EE208091C000FCFE96 /* 日历开发 */ = {
 			isa = PBXGroup;
 			children = (
+				342B566F2088365800F15F88 /* BRPickerView */,
+				34647AA020844781003EB881 /* NSCalendar+JSCCalendar.h */,
+				34647A9F20844780003EB881 /* NSCalendar+JSCCalendar.m */,
 				345C22EF208091C000FCFE96 /* AppDelegate.h */,
 				345C22F0208091C000FCFE96 /* AppDelegate.m */,
 				345C22F2208091C000FCFE96 /* Assets.xcassets */,
 				345C22F4208091C000FCFE96 /* LaunchScreen.storyboard */,
 				345C22F7208091C000FCFE96 /* Info.plist */,
 				345C22F8208091C000FCFE96 /* main.m */,
+				345C231B2080920000FCFE96 /* ViewController.h */,
+				345C231C2080920000FCFE96 /* ViewController.m */,
+				34647AA220844B4E003EB881 /* JSCCollectionViewCell.h */,
+				34647AA320844B4E003EB881 /* JSCCollectionViewCell.m */,
+				34647AA8208473A9003EB881 /* JSCheaderCollectionReusableView.h */,
+				34647AA9208473A9003EB881 /* JSCheaderCollectionReusableView.m */,
+				34647AAB208473C3003EB881 /* JSCfooterCollectionReusableView.h */,
+				34647AAC208473C3003EB881 /* JSCfooterCollectionReusableView.m */,
+				341271512085E4B4002719F5 /* JSCCollectionViewFlowLayout.h */,
+				341271522085E4B4002719F5 /* JSCCollectionViewFlowLayout.m */,
 			);
 			path = "日历开发";
 			sourceTree = "<group>";
@@ -191,7 +296,7 @@
 				TargetAttributes = {
 					345C22EB208091C000FCFE96 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					345C22FD208091C000FCFE96 = {
 						CreatedOnToolsVersion = 9.2;
@@ -232,6 +337,7 @@
 			files = (
 				345C22F3208091C000FCFE96 /* Assets.xcassets in Resources */,
 				345C22F6208091C000FCFE96 /* LaunchScreen.storyboard in Resources */,
+				342B56842088365800F15F88 /* BRPickerView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +362,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342B56862088365800F15F88 /* BRDatePickerView.m in Sources */,
+				342B56882088365800F15F88 /* BRStringPickerView.m in Sources */,
+				345C231D2080920000FCFE96 /* ViewController.m in Sources */,
+				34647AA420844B4E003EB881 /* JSCCollectionViewCell.m in Sources */,
 				345C22F9208091C000FCFE96 /* main.m in Sources */,
+				342B56832088365800F15F88 /* BRAddressPickerView.m in Sources */,
 				345C22F1208091C000FCFE96 /* AppDelegate.m in Sources */,
+				34647AAA208473A9003EB881 /* JSCheaderCollectionReusableView.m in Sources */,
+				341271532085E4B4002719F5 /* JSCCollectionViewFlowLayout.m in Sources */,
+				342B56822088365800F15F88 /* BRAddressModel.m in Sources */,
+				342B56872088365800F15F88 /* NSDate+BRAdd.m in Sources */,
+				34647AA120844781003EB881 /* NSCalendar+JSCCalendar.m in Sources */,
+				342B56852088365800F15F88 /* BRBaseView.m in Sources */,
+				34647AAD208473C3003EB881 /* JSCfooterCollectionReusableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,11 +530,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y57ZV58M9J;
 				INFOPLIST_FILE = "日历开发/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cellfengzuang.ccc.----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tianli.loveyaya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1d589441-ae54-49d9-b956-0704694be024";
+				PROVISIONING_PROFILE_SPECIFIER = loveyaya_dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -425,11 +546,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y57ZV58M9J;
 				INFOPLIST_FILE = "日历开发/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cellfengzuang.ccc.----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tianli.loveyaya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1d589441-ae54-49d9-b956-0704694be024";
+				PROVISIONING_PROFILE_SPECIFIER = loveyaya_dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
