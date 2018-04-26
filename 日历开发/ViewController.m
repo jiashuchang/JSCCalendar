@@ -236,7 +236,9 @@ static NSString * const footerid = @"footerid";
         cell.label.textColor = [UIColor greenColor];
         cell.layer.masksToBounds = YES;
         cell.layer.cornerRadius = 5.0;
-        cell.label.text = _daysInMonth[indexPath.section][indexPath.row - firstWeekday];
+        NSDate *date = _daysInMonth[indexPath.section][indexPath.row - firstWeekday];
+        NSInteger day = [self.calendar day:date];
+        cell.label.text = [NSString stringWithFormat:@"%ld",day];
         if (indexPath.row == [self.calendar dateInCalendarTodaySubscript:_threedateArray[indexPath.section]]) {
             cell.backgroundColor = JyColor(236, 125, 183, 1);
         }

@@ -122,28 +122,71 @@
     return components.day + [self firstWeekdayInThisMonth:date] - 1;
 }
 #pragma mark - 返回上月本月和下月三个月个日历数组
+//- (NSArray *)threedateArray:(NSDate *)date{
+//
+//    NSMutableArray *mutableArray1 = [NSMutableArray array];
+//    NSMutableArray *mutableArray2 = [NSMutableArray array];
+//    NSMutableArray *mutableArray3 = [NSMutableArray array];
+//
+//    NSDate *lastdate = [self lastMonth:date];
+//    NSDate *nextdate = [self nextMonth:date];
+//
+//    for (int i = 0; i < [self totaldaysInMonth:lastdate]; i++) {
+//        NSString *str = [NSString stringWithFormat:@"%d",i+1];
+//        [mutableArray1 addObject:str];
+//    }
+//    for (int i = 0; i < [self totaldaysInMonth:date]; i++) {
+//        NSString *str = [NSString stringWithFormat:@"%d",i+1];
+//        [mutableArray2 addObject:str];
+//    }
+//    for (int i = 0; i < [self totaldaysInMonth:nextdate]; i++) {
+//        NSString *str = [NSString stringWithFormat:@"%d",i+1];
+//        [mutableArray3 addObject:str];
+//    }
+//    NSArray *array = [NSArray arrayWithObjects:mutableArray1, mutableArray2, mutableArray3, nil];
+//    return array;
+//}
 - (NSArray *)threedateArray:(NSDate *)date{
     
     NSMutableArray *mutableArray1 = [NSMutableArray array];
     NSMutableArray *mutableArray2 = [NSMutableArray array];
     NSMutableArray *mutableArray3 = [NSMutableArray array];
     
-    NSDate *lastdate = [self lastMonth:date];
-    NSDate *nextdate = [self nextMonth:date];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *comp = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:date];
+    [comp setDay:1];
+    NSDate *firstDayOfMonthDate = [calendar dateFromComponents:comp];
     
-    for (int i = 0; i < [self totaldaysInMonth:lastdate]; i++) {
-        NSString *str = [NSString stringWithFormat:@"%d",i+1];
-        [mutableArray1 addObject:str];
+    NSDate *lastdate = [self lastMonth:firstDayOfMonthDate];
+    NSDate *nextdate = [self nextMonth:firstDayOfMonthDate];
+    
+    NSInteger lastinteger = [self totaldaysInMonth:lastdate];
+    NSInteger currentinteger = [self totaldaysInMonth:firstDayOfMonthDate];
+    NSInteger nextinteger = [self totaldaysInMonth:nextdate];
+    
+    
+    for (int i = 0; i < lastinteger; i++) {
+        NSDateComponents *dayComponent = [NSDateComponents new];
+        dayComponent.day = 1;
+        [mutableArray1 addObject:lastdate];
+        lastdate = [calendar dateByAddingComponents:dayComponent toDate:lastdate options:0];
     }
-    for (int i = 0; i < [self totaldaysInMonth:date]; i++) {
-        NSString *str = [NSString stringWithFormat:@"%d",i+1];
-        [mutableArray2 addObject:str];
+    
+    for (int i = 0; i < currentinteger; i++) {
+        NSDateComponents *dayComponent = [NSDateComponents new];
+        dayComponent.day = 1;
+        [mutableArray2 addObject:firstDayOfMonthDate];
+        firstDayOfMonthDate = [calendar dateByAddingComponents:dayComponent toDate:firstDayOfMonthDate options:0];
     }
-    for (int i = 0; i < [self totaldaysInMonth:nextdate]; i++) {
-        NSString *str = [NSString stringWithFormat:@"%d",i+1];
-        [mutableArray3 addObject:str];
+    
+    for (int i = 0; i < nextinteger; i++) {
+        NSDateComponents *dayComponent = [NSDateComponents new];
+        dayComponent.day = 1;
+        [mutableArray3 addObject:nextdate];
+        nextdate = [calendar dateByAddingComponents:dayComponent toDate:nextdate options:0];
     }
     NSArray *array = [NSArray arrayWithObjects:mutableArray1, mutableArray2, mutableArray3, nil];
     return array;
+    
 }
 @end
